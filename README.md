@@ -29,7 +29,40 @@ ivifs_project/
 ---
 ## ⚙️ Installation
 
-### 1️⃣ Clone the Repository
+1. lone the Repository
 ```bash
 git clone https://github.com/Bisma8090/IVIFS-Simplified.git
+```
+2. Navigate to the project directory:
+ ```bash
 cd ivifs_project
+   ```
+3. Create and activate environment:
+ ```bash
+python -m venv venv
+venv\Scripts\activate   # (Windows)
+   ```
+4.Install dependencies:
+ ```bash
+pip install -r requirements.txt
+   ```
+5. Generate Synthetic Infrared Images:
+ ```bash
+python scripts/make_infrared.py
+   ```
+6. Train / Simulate CVIFSM Fusion:
+ ```bash
+python scripts/train_cvifsm.py
+   ```
+7. Interactive Fusion Control (IRM):
+ ```bash
+python scripts/irm_interactive.py
+   ```
+8. Visualize Segmentation:
+ ```bash
+python scripts/segmentation_visual.py
+```
+9. Evaluate Metrics:
+ ```bash
+python scripts/metrics_eval.py
+   ```
